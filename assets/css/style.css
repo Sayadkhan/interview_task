@@ -52,3 +52,9 @@
     align-items: center;
   }
 }
+
+nav .open-menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+}

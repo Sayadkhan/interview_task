@@ -56,17 +56,23 @@
       <div class="block lg:hidden text-black mx-5">
         <i class="fa-solid fa-bars"></i>
       </div>
+
+      <div class="open-menu"></div>
     </nav>
 
     <main>
       <!-- hero section -->
-      <header class="container mx-auto flex justify-between items-center">
+      <header
+        class="container mx-auto flex flex-col lg:flex lg:flex-row justify-between items-center"
+      >
         <div class="">
-          <h1 class="title text-[70px] leading-[80px] font-[700]">
+          <h1
+            class="title text-[50px] lg:text-[70px] leading-[80px] font-[700] text-center"
+          >
             Welcome to Financial Planning in Dubai
           </h1>
           <div
-            class="text-lg font-[400] text-[18px] leading-[26px] text-[#646464] flex flex-col gap-8"
+            class="text-lg font-[400] text-[18px] leading-[26px] text-[#646464] flex flex-col gap-8 text-center"
           >
             <p class="">
               I am Damodhar Mata - Financial Advisor for UAE Residents, Gulf
@@ -77,14 +83,16 @@
               one session for FREE.
             </p>
           </div>
-          <button
-            class="bg-[#4AC7AA] rounded-[80px] px-[16px] py-[22px] my-10"
-            href="#"
-          >
-            <span class="text-[16px] text-white"
-              >Arrange a Free Online Consultation</span
+          <div class="flex items-center justify-center">
+            <button
+              class="bg-[#4AC7AA] rounded-[80px] px-[16px] py-[22px] my-10"
+              href="#"
             >
-          </button>
+              <span class="text-[16px] text-white"
+                >Arrange a Free Online Consultation</span
+              >
+            </button>
+          </div>
         </div>
         <div>
           <img src="/assets/images/img01.png" alt="" />
@@ -93,7 +101,9 @@
       <!-- section 1 -->
       <section class="bg-[#F8F8F8] mt-5">
         <!-- count us section -->
-        <div class="container mx-auto flex items-center gap-[20px]">
+        <div
+          class="container mx-auto flex flex-col lg:flex lg:flex-row items-center gap-[20px]"
+        >
           <div class="">
             <div><img src="assets/images/img-02.png" alt="" /></div>
           </div>
@@ -107,7 +117,9 @@
           </div>
         </div>
         <!-- our service -->
-        <div class="container mx-auto flex gap-10 my-10">
+        <div
+          class="container mx-auto flex flex-col lg:flex lg:flex-row gap-10 my-10 hidden lg:block"
+        >
           <div class="left w-96">
             <h2 class="font-[700] text-[50px]">Our Service</h2>
             <span class="font-[400] text-[16px]">
@@ -159,15 +171,72 @@
             </div>
           </div>
         </div>
+        <!-- our service mobile -->
+        <div
+          class="container mx-auto flex flex-col lg:flex lg:flex-row gap-10 my-10 block lg:hidden"
+        >
+          <!-- card -->
+          <div class="grid grid-cols-2 gap-5">
+            <!-- card 1 -->
+            <div class="border-[2px] border-[#0E1110] h-[20rem] p-5">
+              <div class="grid gap-5">
+                <div><img src="/assets/images/icons/cards.png" alt="" /></div>
+                <div class="font-bold">Investments</div>
+                <div class="h-24">
+                  As an Investment Advisor in Dubai, I can help you in
+                  International stocks...
+                </div>
+                <div class="font-[500]">read more</div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="border-[2px] border-[#0E1110] h-[20rem] p-5">
+              <div class="grid gap-5">
+                <div><img src="/assets/images/icons/cards.png" alt="" /></div>
+                <div class="font-bold">Retirement Planning</div>
+                <div class="h-24">
+                  You may stop working, but you cannot stop spending! We can
+                  help you make...
+                </div>
+                <div class="font-[500]">read more</div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="border-[2px] border-[#0E1110] h-[20rem] p-5">
+              <div class="grid gap-5">
+                <div><img src="/assets/images/icons/cards.png" alt="" /></div>
+                <div class="font-bold">Life & Critical Illness Insurance</div>
+                <div class="h-24">
+                  The most efficient and affordable risk transfer medium,
+                  helping you...
+                </div>
+                <div class="font-[500]">read more</div>
+              </div>
+            </div>
+          </div>
+          <div class="left w-96">
+            <h2 class="font-[700] text-[50px]">Our Service</h2>
+            <span class="font-[400] text-[16px]">
+              Whether it is Holistic Financial Planning, Life Insurance, or
+              Investing to grow your wealth and create passive income, whatever
+              your money goals are, I can help you...
+            </span>
+            <div class="flex items-center justify-center">
+              <img src="/assets/images/icons/vector-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
       <!-- section 2 -->
       <section class="container mx-auto">
         <!-- hearder top -->
         <div class="flex flex-col justify-center items-center">
-          <div class="text-[50px] font-semibold">
+          <div
+            class="text-[30px] flex items-center lg:text-[50px] font-semibold text-center"
+          >
             The GAIM Plan includes the following steps
           </div>
-          <div class="text-center px-[10rem]">
+          <div class="text-center px-5 lg:px-[10rem]">
             <p>
               With more than a decade's experience in helping people plan win
               with money, I have designed the GAiM Plan. A Comprehensive
@@ -178,7 +247,9 @@
         </div>
 
         <!-- section -->
-        <div class="grid grid-cols-4 gap-10 mt-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10"
+        >
           <!-- card 1 -->
           <div class="flex items-center justify-center gap-5">
             <div class="text-center p-4">
@@ -280,7 +351,7 @@
       </section>
       <!-- section 3 -->
       <section
-        class="bg-[#F8F8F8] container mx-auto flex items-center justify-center gap-10"
+        class="bg-[#F8F8F8] container mx-auto flex flex-col lg:flex lg:flex-row items-center justify-center gap-10 p-3"
       >
         <div>
           <img src="/assets/images/img-05.png" alt="" />
@@ -318,11 +389,11 @@
             Choose plan that works best for you, feel free to contact us
           </p>
         </div>
-        <div class="flex items-center justify-center gap-5">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5"
+        >
           <!-- card 1 -->
-          <div
-            class="w-[30rem] h-[40rem] shadow-xl hover:shadow-2xl rounded-md"
-          >
+          <div class="h-[40rem] shadow-xl hover:shadow-2xl rounded-md">
             <div class="my-10">
               <div class="text-center text-[#191A15] font-[700] text-[40px]">
                 <h3>Offer 1</h3>
@@ -370,7 +441,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="w-[30rem] h-[40rem] shadow-xl hover:shadow-2xl bg-[#4AC7AA] rounded-md"
+            class="h-[40rem] shadow-xl hover:shadow-2xl bg-[#4AC7AA] rounded-md"
           >
             <div class="my-10">
               <div class="text-center text-[#191A15] font-[700] text-[40px]">
@@ -418,9 +489,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div
-            class="w-[30rem] h-[40rem] shadow-xl hover:shadow-2xl rounded-md"
-          >
+          <div class="h-[40rem] shadow-xl hover:shadow-2xl rounded-md">
             <div class="my-10">
               <div class="text-center text-[#191A15] font-[700] text-[40px]">
                 <h3>Offer 3</h3>
@@ -468,7 +537,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#4AC7AA] grid grid-cols-[70%_30%] mt-10">
+      <section class="bg-[#4AC7AA] grid lg:grid-cols-[70%_30%] mt-10">
         <!-- left -->
         <div class="py-5 flex items-center justify-center">
           <div
@@ -498,7 +567,7 @@
         </div>
       </section>
       <section class="my-18 container mx-auto">
-        <div class="grid grid-cols-[25%_25%_25%_25%] gap-10">
+        <div class="grid grid-cols-2 lg:grid-cols-[25%_25%_25%_25%] gap-10">
           <div
             class="year flex items-center justify-center w-[235px] h-[200px] relative"
           >
@@ -507,9 +576,7 @@
               Year
             </p>
           </div>
-          <div
-            class="year flex items-center justify-center w-[235px] h-[200px] relative"
-          >
+          <div class="year flex items-center justify-center relative">
             <h2 class="text-[180px] opacity-10" data-target="5">80</h2>
             <p class="text-[40px] font-semibold absolute top-[40%] left-[30%]">
               Projects
@@ -518,12 +585,7 @@
           <div
             class="year flex items-center justify-center w-[235px] h-[200px] relative"
           >
-            <h2
-              class="absolute top-[-17%] left-[30%] text-[180px] opacity-10"
-              data-target="5"
-            >
-              02
-            </h2>
+            <h2 class="absolute text-[180px] opacity-10" data-target="5">02</h2>
             <p class="text-[40px] font-semibold absolute top-[40%] left-[30%]">
               Office
             </p>
@@ -531,12 +593,7 @@
           <div
             class="year flex items-center justify-center w-[235px] h-[200px] relative"
           >
-            <h2
-              class="absolute top-[-17%] left-[30%] text-[180px] opacity-10"
-              data-target="5"
-            >
-              45
-            </h2>
+            <h2 class="absolute text-[180px] opacity-10" data-target="5">45</h2>
             <p class="text-[40px] font-semibold absolute top-[40%] left-[30%]">
               People
             </p>
@@ -550,9 +607,9 @@
           class="absulate top-0 right-0 left-0 bottom-0 w-full h-full bg-black/50"
         >
           <div
-            class="flex flex-col items-center justify-center px-[30rem] text-white"
+            class="flex flex-col items-center justify-center px-0 lg:px-[30rem] text-white py-10"
           >
-            <p class="text-[50px] text-center">
+            <p class="text-[30px] lg:text-[50px] text-center">
               Get your Bespoke Financial Plan and investment strategy in just
               one session for FREE.
             </p>
@@ -583,7 +640,7 @@
     </main>
     <footer class="bg-[#0E1110] py-5">
       <div
-        class="container mx-auto grid grid-cols-[25%_25%_25%_25%] gap-10 py-5"
+        class="container mx-auto grid lg:grid-cols-[25%_25%_25%_25%] gap-10 py-5"
       >
         <div class="logo_section flex flex-col gap-3">
           <div><img src="/assets/images/footer-logo.png" alt="" /></div>
